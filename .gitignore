@@ -1,0 +1,149 @@
+# gastro/.gitignore
+
+# ========================
+# 🚨 CONFIGURAÇÕES SENSÍVEIS
+# ========================
+
+# Arquivos de ambiente (raiz e projetos)
+.env
+.env.*
+!.env.example
+docker-compose.override.yml
+docker-compose.prod.yml
+
+# Arquivos de ambiente específicos dos projetos
+frontend/.env.local
+frontend/.env.*.local
+backend/.env
+backend/.env.*
+
+# ========================
+# 🐳 DOCKER & CONTAINERS
+# ========================
+docker-data/
+volumes/
+
+# ========================
+# 📦 DEPENDÊNCIAS & BUILDS
+# ========================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+.next/
+out/
+
+# NestJS
+dist/
+.nyc_output/
+coverage/
+
+# Frameworks diversos
+.nuxt/
+dist/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.parcel-cache/
+.cache/
+
+# ========================
+# 🧪 TESTING & QUALIDADE
+# ========================
+coverage/
+*.lcov
+.nyc_output
+.eslintcache
+/test-results/
+/playwright-report/
+/playwright/.cache/
+jest.config.js
+
+# ========================
+# 🛠️ FERRAMENTAS DE DESENVOLVIMENTO
+# ========================
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache diversos
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.tern-port
+
+# ========================
+# 🗄️ BANCO DE DADOS
+# ========================
+*.db
+*.sqlite
+*.sqlite3
+migrations/*.sql
+!migrations/structure.sql
+
+# ========================
+# 🔐 SEGURANÇA & CERTIFICADOS
+# ========================
+*.pem
+*.crt
+*.key
+.dynamodb/
+
+# ========================
+# 💻 SISTEMA OPERACIONAL
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ========================
+# 📦 ARQUIVOS TEMPORÁRIOS
+# ========================
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# ========================
+# 🎯 PROJETOS ESPECÍFICOS
+# ========================
+
+# Backend NestJS
+backend/dist/
+backend/.nyc_output/
+backend/coverage/
+backend/*.log
+backend/.eslintcache
+
+# Frontend Next.js
+frontend/.next/
+frontend/out/
+frontend/.nuxt/
+frontend/dist/
+frontend/.vuepress/dist
