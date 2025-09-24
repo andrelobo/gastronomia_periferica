@@ -1,0 +1,9 @@
+gastro/
+ ├── docker-compose.yml       <-- Orquestra tudo
+ ├── frontend/                <-- Repo do Front
+ │    ├── Dockerfile
+ │    └── ...
+ └── backend/                 <-- Repo do Back
+      ├── Dockerfile
+      ├── .env
+      └── ...
